@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body class="img-holder">
+  <header>
+    <h1>TODO</h1>
+    <img id="img" src="images/icon-sun.svg">
+  </header>
+  <div class="first-sec">
+    <div class="box1 first"><button class="btn" disabled></button>
+      <form>
+        <input type="text" placeholder="Create a new todo..." id="hello" class="first" value="">
+      </form>
+    </div>
+  </div>
+  <div class="second-sec">
+    <div class="box second "><button class="btn"></button>
+      <label>Complete online JavaScript course</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="box"><button class="btn"></button>
+      <label>Jog around the park 3x</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="box"><button class="btn"></button>
+      <label>10 minutes meditation</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="box"><button class="btn"></button>
+      <label>Read for 1 hour</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="box"><button class="btn"></button>
+      <label>Pick up groceries</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="box"><button class="btn"></button>
+      <label>Complete Todo App on Frontend Mentor</label><i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+  </div>
+  <div class="last-sec">
+    <div class="box last">
+      <span><span id="items">6 </span>Overall items</span>
+      <ul>
+        <li class="active" id="first-li">All</li>
+        <li id="second-li">Active</li>
+        <li id="third-li">Completed</li>
+      </ul>
+      <span class="clear">Clear Completed</span>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
